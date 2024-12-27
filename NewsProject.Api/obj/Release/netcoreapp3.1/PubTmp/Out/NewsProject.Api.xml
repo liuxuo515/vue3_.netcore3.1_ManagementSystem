@@ -1,0 +1,318 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NewsProject.Api</name>
+    </assembly>
+    <members>
+        <member name="T:BusinessAccount.Configuration.DependencyModule">
+            <summary>
+            接口注入
+            </summary>
+        </member>
+        <member name="P:BusinessAccount.Api.Models.JwtConfig.SecurityKey">
+            <summary>
+            密钥
+            </summary>
+        </member>
+        <member name="P:BusinessAccount.Api.Models.JwtConfig.Issuer">
+            <summary>
+            所属者
+            </summary>
+        </member>
+        <member name="P:BusinessAccount.Api.Models.JwtConfig.Expiration">
+            <summary>
+            过期时间
+            </summary>
+        </member>
+        <member name="T:BusinessAccount.Api.Models.LoginEntity">
+            <summary>
+            登录实体
+            </summary>
+        </member>
+        <member name="P:BusinessAccount.Api.Models.LoginEntity.username">
+            <summary>
+            登录名：admin
+            </summary>
+        </member>
+        <member name="P:BusinessAccount.Api.Models.LoginEntity.password">
+            <summary>
+            密码：123456
+            </summary>
+        </member>
+        <member name="P:BusinessAccount.Api.Models.LoginEntity.CaptchaToken">
+            <summary>
+            验证码 获取验证码接口返回的加密串
+            </summary>
+        </member>
+        <member name="P:BusinessAccount.Api.Models.LoginEntity.CaptchaValue">
+            <summary>
+            验证码
+            </summary>
+        </member>
+        <member name="P:BusinessAccount.Api.Models.LoginEntity.RoleId">
+            <summary>
+            角色id 1管理员 2客户
+            </summary>
+        </member>
+        <member name="T:BusinessAccount.Api.Models.JwtDto">
+            <summary>
+            登录返回实体
+            </summary>
+        </member>
+        <member name="M:BusinessAccount.Extensions.JwtExtensions.GetJwtUserInfo(Microsoft.AspNetCore.Http.HttpRequest)">
+            <summary>
+            获取jwt中的登录值
+            </summary>
+            <param name="request"></param>
+            <param name="ClaimsName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BusinessAccount.Extensions.JwtExtensions.GenerateTokens(BusinessAccount.Api.Models.JwtConfig,System.Security.Claims.Claim[])">
+            <summary>
+            返回token
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BusinessAccount.Extensions.JwtExtensions.Generateclaims(NewsProject.Application.Contracts.Login.LoginDto)">
+            <summary>
+            返回claims
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NewsProject.Api.Controllers.InformationController.GetHomeInforCount">
+            <summary>
+            首页 资讯列表查询（总期数、阅读量、转发量）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NewsProject.Api.Controllers.InformationController.GetHomeInforSevendays">
+            <summary>
+            首页 资讯列表查询（获取近七天的阅读量和转发量）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NewsProject.Api.Controllers.InformationController.GetInfor(NewsProject.Application.Information.InformationQueryParameter)">
+            <summary>
+            资讯列表查询
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NewsProject.Api.Controllers.InformationController.GetHistoricalInfor(NewsProject.Application.Information.HistoricalInforQueryParameter)">
+            <summary>
+            小程序接口 获取资讯期号（往日新闻）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NewsProject.Api.Controllers.InformationController.DelInfor(System.Int32)">
+            <summary>
+            删除接口
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NewsProject.Api.Controllers.InformationController.StateInfor(NewsProject.Application.Information.InforStateDto)">
+            <summary>
+            审核接口
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NewsProject.Api.Controllers.InformationController.ReadtheForwardInfor(NewsProject.Application.Information.ReadtheForwardDto)">
+            <summary>
+            阅读 转发
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NewsProject.Api.Controllers.InformationController.SaveOrUpdateInfor(NewsProject.Application.Information.InformationDto)">
+            <summary>
+            新增 or 修改 资讯
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NewsProject.Api.Controllers.InformationController.UploadFile(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            上传音频方法
+            </summary>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NewsProject.Api.Controllers.InformationController.GetLawyer">
+            <summary>
+            获取涉外律师加盟
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NewsProject.Api.Controllers.InformationController.SaveLawyer(NewsProject.Core.Entities.foreignlawyerEntity)">
+            <summary>
+            保存涉外律师加盟
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NewsProject.Api.Controllers.LoginController.GetLogin(NewsProject.Application.Contracts.User.UserLoginDto)">
+            <summary>
+            登录接口    
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NewsProject.Api.Controllers.UserController.getusers(System.String,System.Int32,System.Int32)">
+            <summary>
+            用户查询接口
+            </summary>
+            <param name="id"></param>
+            <param name="pageIndex"></param>
+            <param name="pageSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NewsProject.Api.Controllers.UserController.saveorupdateuser(NewsProject.Application.Contracts.User.SaveUserQuery)">
+            <summary>
+            用户新增 修改接口
+            </summary>
+            <param name="saveUser"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NewsProject.Api.Controllers.UserController.deluser(System.Int32)">
+            <summary>
+            用户删除接口
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NewsProject.Api.Controllers.UserController.rolePermiss(System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            角色权限查询接口
+            </summary>
+            <param name="roleName"></param>
+            <param name="pageIndex"></param>
+            <param name="pageSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NewsProject.Api.Controllers.UserController.GetRoleOpts">
+            <summary>
+            角色下拉框查询接口
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NewsProject.Api.Controllers.UserController.SaveOrUpdateRole(NewsProject.Application.Contracts.User.RoleQuery)">
+            <summary>
+            角色 新增 or 修改接口
+            </summary>
+            <param name="role"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NewsProject.Api.Controllers.UserController.DelRole(System.Int32)">
+            <summary>
+            角色删除接口
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NewsProject.Api.Controllers.UserController.SaveOrUpdatePermiss(NewsProject.Application.Contracts.User.RolePermissQuery)">
+            <summary>
+            角色权限 修改
+            </summary>
+            <param name="rolePermiss"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NewsProject.Api.Extensions.CalendarHelper.GetCalendar(System.String)">
+            <summary>
+            天聚数行--中国老黄历
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NewsProject.Api.Extensions.CalendarHelper.Get_mxnzp_Calendar(System.String)">
+            <summary>
+            https://www.mxnzp.com/--日历接口
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:System.YingKe.Common.Encrypt.AccountPwdEncryptKey">
+            <summary>
+            用于加密用户密码用使用的key
+            </summary>
+        </member>
+        <member name="M:System.YingKe.Common.Encrypt.AESDecrypt(System.String,System.String)">
+            <summary>
+            AES解密
+            </summary>
+            <param name="pToDencrypt"></param>
+            <param name="skey"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.YingKe.Common.Encrypt.AESEncrypt(System.String,System.String)">
+            <summary>
+            AES加密
+            </summary>
+            <param name="pToEncrypt"></param>
+            <param name="skey"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.YingKe.Common.Encrypt.DESDecrypt(System.String,System.String)">
+            <summary>
+            DES解密
+            </summary>
+            <param name="pToDecrypt"></param>
+            <param name="sKey"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.YingKe.Common.Encrypt.DESEncrypt(System.String,System.String)">
+            <summary>
+            DES加密
+            </summary>
+            <param name="pToEncrypt"></param>
+            <param name="sKey"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.YingKe.Common.Encrypt.Encode(System.String,System.String,System.String)">
+            <summary>  
+            Des 加密 GB2312
+            </summary>  
+            <param name="str">Desc string</param>  
+            <param name="key">Key ,必须为8位</param>  
+            <param name="iv">偏移值</param>
+            <returns></returns>  
+        </member>
+        <member name="M:System.YingKe.Common.Encrypt.Decode(System.String,System.String,System.String)">
+            <summary>  
+            Des 解密 GB2312
+            </summary>  
+            <param name="str">Desc string</param>  
+            <param name="key">Key ,必须为8位 </param>
+            <param name="iv">偏移值</param>
+            <returns></returns>  
+        </member>
+        <member name="M:System.YingKe.Common.Encrypt.Encode(System.String)">
+            <summary>  
+            If don't input key , Use default key  
+            Des 加密 GB2312 :  
+            </summary>  
+            <param name="str"></param>  
+            <returns></returns>  
+        </member>
+        <member name="M:System.YingKe.Common.Encrypt.Decode(System.String)">
+            <summary>  
+            解密  
+            </summary>  
+            <param name="str"></param>  
+            <returns></returns>  
+        </member>
+        <member name="M:System.YingKe.Common.Encrypt.Base64Code(System.String)">
+            <summary>
+            Base64加密
+            </summary>
+            <param name="message"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.YingKe.Common.Encrypt.Base64Decode(System.String)">
+            <summary>
+            Base64解密
+            </summary>
+            <param name="message"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.YingKe.Common.Encrypt.GetTimeStamp(System.Boolean)">
+            <summary>
+            获取时间戳
+            </summary>
+            <param name="bflag">bflag : true 秒 ， false 毫秒</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

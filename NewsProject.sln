@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewsProject.Api", "NewsProject.Api\NewsProject.Api.csproj", "{64C3579A-7852-4BED-9F6E-19CE5F2DF27C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewsProject.Application", "NewsProject.Application\NewsProject.Application.csproj", "{BD836C66-6853-42C2-A221-5D04521D964F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewsProject.Application.Contracts", "NewsProject.Application.Contracts\NewsProject.Application.Contracts.csproj", "{237AE054-BA70-4E32-AB34-E1D408B78EBB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewsProject.Core", "NewsProject.Core\NewsProject.Core.csproj", "{B2EF9BA7-BF7E-439B-A917-AF698F877318}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewsProject.Infrastructure", "NewsProject.Infrastructure\NewsProject.Infrastructure.csproj", "{4F872A65-B020-4407-96BD-B38F7A88E3CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64C3579A-7852-4BED-9F6E-19CE5F2DF27C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64C3579A-7852-4BED-9F6E-19CE5F2DF27C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64C3579A-7852-4BED-9F6E-19CE5F2DF27C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64C3579A-7852-4BED-9F6E-19CE5F2DF27C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD836C66-6853-42C2-A221-5D04521D964F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD836C66-6853-42C2-A221-5D04521D964F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD836C66-6853-42C2-A221-5D04521D964F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD836C66-6853-42C2-A221-5D04521D964F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{237AE054-BA70-4E32-AB34-E1D408B78EBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{237AE054-BA70-4E32-AB34-E1D408B78EBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{237AE054-BA70-4E32-AB34-E1D408B78EBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{237AE054-BA70-4E32-AB34-E1D408B78EBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2EF9BA7-BF7E-439B-A917-AF698F877318}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2EF9BA7-BF7E-439B-A917-AF698F877318}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2EF9BA7-BF7E-439B-A917-AF698F877318}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2EF9BA7-BF7E-439B-A917-AF698F877318}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F872A65-B020-4407-96BD-B38F7A88E3CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F872A65-B020-4407-96BD-B38F7A88E3CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F872A65-B020-4407-96BD-B38F7A88E3CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F872A65-B020-4407-96BD-B38F7A88E3CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D3D86526-CE47-4BEC-848A-9AFFDD2088D1}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://172.16.17.177:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = NewsProject.Api\\NewsProject.Api.csproj
+		SccProjectName1 = NewsProject.Api
+		SccLocalPath1 = NewsProject.Api
+		SccProjectUniqueName2 = NewsProject.Application\\NewsProject.Application.csproj
+		SccProjectName2 = NewsProject.Application
+		SccLocalPath2 = NewsProject.Application
+		SccProjectUniqueName3 = NewsProject.Application.Contracts\\NewsProject.Application.Contracts.csproj
+		SccProjectName3 = NewsProject.Application.Contracts
+		SccLocalPath3 = NewsProject.Application.Contracts
+		SccProjectUniqueName4 = NewsProject.Core\\NewsProject.Core.csproj
+		SccProjectName4 = NewsProject.Core
+		SccLocalPath4 = NewsProject.Core
+		SccProjectUniqueName5 = NewsProject.Infrastructure\\NewsProject.Infrastructure.csproj
+		SccProjectName5 = NewsProject.Infrastructure
+		SccLocalPath5 = NewsProject.Infrastructure
+	EndGlobalSection
+EndGlobal

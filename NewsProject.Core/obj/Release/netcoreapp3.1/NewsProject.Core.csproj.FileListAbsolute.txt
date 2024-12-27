@@ -1,0 +1,10 @@
+D:\Code\YingKe\NewsProject\NewsProject.Core\bin\Release\netcoreapp3.1\NewsProject.Core.deps.json
+D:\Code\YingKe\NewsProject\NewsProject.Core\bin\Release\netcoreapp3.1\NewsProject.Core.dll
+D:\Code\YingKe\NewsProject\NewsProject.Core\bin\Release\netcoreapp3.1\NewsProject.Core.pdb
+D:\Code\YingKe\NewsProject\NewsProject.Core\obj\Release\netcoreapp3.1\NewsProject.Core.csproj.AssemblyReference.cache
+D:\Code\YingKe\NewsProject\NewsProject.Core\obj\Release\netcoreapp3.1\NewsProject.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code\YingKe\NewsProject\NewsProject.Core\obj\Release\netcoreapp3.1\NewsProject.Core.AssemblyInfoInputs.cache
+D:\Code\YingKe\NewsProject\NewsProject.Core\obj\Release\netcoreapp3.1\NewsProject.Core.AssemblyInfo.cs
+D:\Code\YingKe\NewsProject\NewsProject.Core\obj\Release\netcoreapp3.1\NewsProject.Core.csproj.CoreCompileInputs.cache
+D:\Code\YingKe\NewsProject\NewsProject.Core\obj\Release\netcoreapp3.1\NewsProject.Core.dll
+D:\Code\YingKe\NewsProject\NewsProject.Core\obj\Release\netcoreapp3.1\NewsProject.Core.pdb
